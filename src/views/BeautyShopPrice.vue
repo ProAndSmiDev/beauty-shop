@@ -3,11 +3,14 @@
 </template>
 
 <script lang="ts">
-export default {
+import { defineComponent } from 'vue';
+
+export default defineComponent({
   name: 'BeautyShopPrice',
-};
+  metaInfo: {
+    title: '«Beauty Shop» - Price',
+  },
+});
 </script>
 
-<style scoped lang="scss">
-
-</style>
+<style scoped lang="scss"></style>

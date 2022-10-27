@@ -1,14 +1,16 @@
 <template>
-  <div class="bs-home">
-  </div>
+  <div class="bs-home"></div>
 </template>
 
 <script lang="ts">
-import Vue from 'vue';
+import { defineComponent } from 'vue';
 
-export default Vue.extend({
+export default defineComponent({
   name: 'BeautyShopHome',
   components: {
+  },
+  metaInfo: {
+    title: '«Beauty Shop» - Main Page',
   },
 });
 </script>
