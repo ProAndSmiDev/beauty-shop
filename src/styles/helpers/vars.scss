@@ -1,0 +1,8 @@
+$primary: hsl(0, 0%, 100%);
+$secondary: hsl(0, 0%, 0%);
+$theme: hsl(216, 100%, 66%);
+
+$text_clr: lighten($secondary, 47%);
+$main_clr: hsl(0, 100%, 50%);
+$price_clr: hsl(130, 100%, 36%);
+$border_clr: darken($theme, 13%);

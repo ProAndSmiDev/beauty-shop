@@ -1,0 +1,16 @@
+.bs-menu {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: em(30, $fz);
+
+  &__link {
+    font-weight: bold;
+    color: hsl(210, 29%, 24%);
+
+    ::v-deep {
+      &.router-link-exact-active {
+        color: hsl(153, 47%, 49%);
+      }
+    }
+  }
+}

@@ -1,6 +1,6 @@
 import Vue from 'vue';
 import VueRouter, { RouteConfig } from 'vue-router';
-import HomeView from '../views/HomeView.vue';
+import BeautyShopHome from '../views/BeautyShopHome.vue';
 
 Vue.use(VueRouter);
 
@@ -8,15 +8,32 @@ const routes: Array<RouteConfig> = [
   {
     path: '/',
     name: 'home',
-    component: HomeView,
+    component: BeautyShopHome,
   },
   {
-    path: '/about',
-    name: 'about',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/AboutView.vue'),
+    path: '/makeup',
+    name: 'makeup',
+    component: () => import(/* webpackChunkName: "BeautyShopMakeup" */ '../views/BeautyShopMakeup.vue'),
+  },
+  {
+    path: '/hairstyle',
+    name: 'hairstyle',
+    component: () => import(/* webpackChunkName: "BeautyShopHairstyle" */ '../views/BeautyShopHairstyle.vue'),
+  },
+  {
+    path: '/dresses',
+    name: 'dresses',
+    component: () => import(/* webpackChunkName: "BeautyShopDresses" */ '../views/BeautyShopDresses.vue'),
+  },
+  {
+    path: '/price',
+    name: 'price',
+    component: () => import(/* webpackChunkName: "BeautyShopAbout" */ '../views/BeautyShopPrice.vue'),
+  },
+  {
+    path: '/about-us',
+    name: 'aboutUs',
+    component: () => import(/* webpackChunkName: "BeautyShopAbout" */ '../views/BeautyShopAboutUs.vue'),
   },
 ];
 
