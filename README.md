@@ -1,4 +1,4 @@
-# untitled
+# Beauty Shop
 
 ## Project setup
 ```
