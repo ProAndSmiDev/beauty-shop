@@ -1,18 +1,20 @@
 <template>
   <div id="app" class="bs page">
-    <header class="bs__header">
+    <header class="bs-header bs__header">
       <div class="bs-header__top">
-        <BeautyShopLogo class="bs__logo" />
-        <BeautyShopMenu class="bs__menu" />
+        <BeautyShopLogo class="bs-header__logo" />
+        <BeautyShopMenu class="bs-header__menu" />
       </div>
 
       <BeautyShopContacts class="bs__contacts" />
     </header>
-    <main>
+    <main class="bs-main bs__main">
       <router-view/>
     </main>
-    <footer>
-      <BeautyShopFooter class="bs__footer" />
+    <footer class="bs-footer bs__footer">
+      <BeautyShopCopyright class="bs-footer__copyright">
+        &copy; Copyright 2021 Frenchbraiding. All Rights Reserved. Visit us at social pages
+      </BeautyShopCopyright>
     </footer>
   </div>
 </template>
@@ -20,7 +22,7 @@
 <script lang="ts">
 import BeautyShopMenu from '@/components/BeautyShopMenu.vue';
 import BeautyShopLogo from '@/components/BeautyShopLogo.vue';
-import BeautyShopFooter from '@/components/BeautyShopFooter.vue';
+import BeautyShopCopyright from '@/components/BeautyShopCopyright.vue';
 import BeautyShopContacts from '@/components/BeautyShopContacts.vue';
 
 export default {
@@ -28,8 +30,8 @@ export default {
   components: {
     BeautyShopLogo,
     BeautyShopMenu,
-    BeautyShopFooter,
     BeautyShopContacts,
+    BeautyShopCopyright,
   },
 };
 </script>

@@ -1,3 +1,7 @@
 @function em($px-size, $fz-size) {
   @return #{$px-size / $fz-size}em;
 }
+
+@function vw($px-vw, $base-vw) {
+  @return ($px-vw * 100vw) / $base-vw;
+}

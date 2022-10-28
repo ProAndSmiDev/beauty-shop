@@ -1,1 +1,26 @@
-.bs {}
+.bs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__header,
+  &__main,
+  &__footer {
+    width: 100%;
+  }
+}
+
+.bs-header {
+  &__top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__logo {
+    width: 100%;
+    max-width: em(281, $fz);
+    height: em(117, $fz);
+    margin-right: em(27, $fz);
+  }
+}

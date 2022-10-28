@@ -1,12 +1,12 @@
-@mixin addFont($name: "Arial", $weight: "Regular", $style: "normal") {
+@mixin addFont($name: "Arial", $postfix: "Regular", $weight: 400, $style: "normal") {
   @font-face {
     font-family: $name;
     font-weight: $weight;
     font-style: $style;
     src:
       local($name),
-      url("@/assets/fonts/" + $name + "/" + $name + "-" + $weight + ".woff2") format("woff2"),
-      url("@/assets/fonts/" + $name + "/" + $name + "-" + $weight + ".woff") format("woff");
+      url("@/assets/fonts/" + $name + "/" + $name + "-" + $postfix + ".woff2") format("woff2"),
+      url("@/assets/fonts/" + $name + "/" + $name + "-" + $postfix + ".woff") format("woff");
     font-display: swap;
   }
 }

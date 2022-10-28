@@ -5,7 +5,7 @@
 
       <img
         src="@/assets/img/logo.jpg"
-        alt="Логотип магазина красоты"
+        alt="Beauty shop's logo"
         class="bs-logo__img"
       >
     </picture>

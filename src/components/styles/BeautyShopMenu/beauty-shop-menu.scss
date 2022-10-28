@@ -1,15 +1,20 @@
 .bs-menu {
-  font-family: Arial, sans-serif;
-  text-align: center;
-  padding: em(30, $fz);
+  display: flex;
 
   &__link {
-    font-weight: bold;
-    color: hsl(210, 29%, 24%);
+    $fz: 24;
+    color: var(--secondary);
+    text-transform: uppercase;
+    font-size: em($fz, $fz_base);
+    letter-spacing: 0.1em;
+
+    &:not(:last-child) {
+      margin-right: em(60, $fz);
+    }
 
     ::v-deep {
       &.router-link-exact-active {
-        color: hsl(153, 47%, 49%);
+        color: var(--theme);
       }
     }
   }
