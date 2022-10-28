@@ -17,11 +17,13 @@
 </template>
 
 <script>
-export default {
+import { defineComponent } from 'vue';
+
+export default defineComponent({
   name: 'BeautyShopContacts',
-};
+});
 </script>
 
 <style scoped lang="scss">
-
+@import '@/components/styles/BeautyShopContacts/component';
 </style>

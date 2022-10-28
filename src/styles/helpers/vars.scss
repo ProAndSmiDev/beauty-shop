@@ -1,8 +1,12 @@
-$primary: hsl(0deg 0% 100%);
-$secondary: hsl(0deg 0% 0%);
-$theme: hsl(216deg 100% 66%);
+:root {
+  --primary: hsl(0, 0%, 100%);
+  --secondary: hsl(0, 0%, 0%);
+  --theme: hsl(216, 100%, 66%);
 
-$text_clr: lighten($secondary, 47%);
-$main_clr: hsl(0deg 100% 50%);
-$price_clr: hsl(130deg 100% 36%);
-$border_clr: darken($theme, 13%);
+  --text-clr: hsl(0, 0%, 47%);
+  --main-clr: hsl(0, 100%, 50%);
+  --price-clr: hsl(130, 100%, 36%);
+  --border-clr: hsl(216, 100%, 53%);
+}
+
+$font: "Montserrat", "Arial", sans-serif;

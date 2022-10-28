@@ -1,4 +1,4 @@
-@mixin add-font($name: "Arial", $weight: "Regular", $style: "normal") {
+@mixin addFont($name: "Arial", $weight: "Regular", $style: "normal") {
   @font-face {
     font-family: $name;
     font-weight: $weight;

@@ -1,0 +1,12 @@
+.bs-contacts-mail {
+  &__info {
+    color: var(--secondary);
+  }
+}
+
+.bs-contacts-phone {
+  &__info {
+    color: var(--secondary);
+    font-weight: 600;
+  }
+}

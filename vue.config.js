@@ -8,8 +8,9 @@ function addStyleResources(rule) {
       patterns: [
         path.resolve(__dirname, './src/styles/helpers/fz.scss'),
         path.resolve(__dirname, './src/styles/helpers/funcs.scss'),
-        path.resolve(__dirname, './src/styles/helpers/mixins'),
-        path.resolve(__dirname, './src/styles/helpers/clear'),
+        path.resolve(__dirname, './src/styles/helpers/mixins.scss'),
+        path.resolve(__dirname, './src/styles/helpers/fonts.scss'),
+        path.resolve(__dirname, './src/styles/helpers/vars.scss'),
       ],
     });
 }

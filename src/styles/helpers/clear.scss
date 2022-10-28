@@ -47,11 +47,6 @@ img {
 
 a {
   text-decoration: none;
-  transition: opacity 0.3s ease-in-out;
-
-  &:hover {
-    opacity: 0.6;
-  }
 }
 
 button {
@@ -88,7 +83,7 @@ footer {
 }
 
 body {
-  font: #{$fz_base}px/1.3 $font;
+  font: #{$fz_base}px/1.3 400 $font;
 }
 
 .header {

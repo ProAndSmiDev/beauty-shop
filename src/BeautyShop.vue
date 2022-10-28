@@ -26,15 +26,10 @@ import BeautyShopContacts from '@/components/BeautyShopContacts.vue';
 export default {
   name: 'BeautyShop',
   components: {
-    BeautyShopContacts,
     BeautyShopLogo,
     BeautyShopMenu,
     BeautyShopFooter,
-  },
-  computed: {
-    imgDir() {
-      return '@/assets/img/';
-    },
+    BeautyShopContacts,
   },
 };
 </script>
