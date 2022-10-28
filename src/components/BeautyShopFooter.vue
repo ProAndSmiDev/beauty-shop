@@ -1,5 +1,8 @@
 <template>
   <div class="bs-footer">
+    <p class="bs-footer__copyright">
+      &copy; Copyright 2021 Frenchbraiding. All Rights Reserved. Visit us at social pages
+    </p>
   </div>
 </template>
 

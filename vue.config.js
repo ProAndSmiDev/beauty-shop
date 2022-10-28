@@ -9,6 +9,7 @@ function addStyleResources(rule) {
         path.resolve(__dirname, './src/styles/helpers/fz.scss'),
         path.resolve(__dirname, './src/styles/helpers/funcs.scss'),
         path.resolve(__dirname, './src/styles/helpers/mixins'),
+        path.resolve(__dirname, './src/styles/helpers/clear'),
       ],
     });
 }

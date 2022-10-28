@@ -1,8 +1,12 @@
 <template>
-  <div id="app" class="bs">
+  <div id="app" class="bs page">
     <header class="bs__header">
-      <BeautyShopLogo class="bs__logo" />
-      <BeautyShopMenu class="bs__menu" />
+      <div class="bs-header__top">
+        <BeautyShopLogo class="bs__logo" />
+        <BeautyShopMenu class="bs__menu" />
+      </div>
+
+      <BeautyShopContacts class="bs__contacts" />
     </header>
     <main>
       <router-view/>
@@ -17,10 +21,12 @@
 import BeautyShopMenu from '@/components/BeautyShopMenu.vue';
 import BeautyShopLogo from '@/components/BeautyShopLogo.vue';
 import BeautyShopFooter from '@/components/BeautyShopFooter.vue';
+import BeautyShopContacts from '@/components/BeautyShopContacts.vue';
 
 export default {
   name: 'BeautyShop',
   components: {
+    BeautyShopContacts,
     BeautyShopLogo,
     BeautyShopMenu,
     BeautyShopFooter,
