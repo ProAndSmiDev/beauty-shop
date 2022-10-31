@@ -1,21 +1,23 @@
 <template>
   <div id="app" class="bs page">
-    <header class="bs-header bs__header">
-      <div class="bs-header__top">
-        <BeautyShopLogo class="bs-header__logo" />
-        <BeautyShopMenu class="bs-header__menu" />
-      </div>
+    <div class="u-wrapper bs__wrapper">
+      <header class="bs-header bs__header">
+        <div class="bs-header__top">
+          <BeautyShopLogo class="bs-header__logo" />
+          <BeautyShopMenu class="bs-header__menu" />
+        </div>
 
-      <BeautyShopContacts class="bs__contacts" />
-    </header>
-    <main class="bs-main bs__main">
-      <router-view/>
-    </main>
-    <footer class="bs-footer bs__footer">
-      <BeautyShopCopyright class="bs-footer__copyright">
-        &copy; Copyright 2021 Frenchbraiding. All Rights Reserved. Visit us at social pages
-      </BeautyShopCopyright>
-    </footer>
+        <BeautyShopContacts class="bs__contacts" />
+      </header>
+      <main class="bs-main bs__main">
+        <router-view/>
+      </main>
+      <footer class="bs-footer bs__footer">
+        <BeautyShopCopyright class="bs-footer__copyright">
+          &copy; Copyright 2021 Frenchbraiding. All Rights Reserved. Visit us at social pages
+        </BeautyShopCopyright>
+      </footer>
+    </div>
   </div>
 </template>
 

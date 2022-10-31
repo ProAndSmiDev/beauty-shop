@@ -1,12 +1,19 @@
 <template>
-  <section class="bs-banner">
+  <section
+    class="bs-banner"
+    :class="`bs-banner--is-${bannerType}`"
+  >
     <picture class="bs-banner__pic">
-      <source srcset="" type="image/webp">
+      <source srcset="@/assets/img/banner/bg.webp" type="image/webp">
 
-      <img src="" alt="Beauty shop banner's photo">
+      <img src="@/assets/img/banner/bg.jpg" alt="Beauty shop banner's photo">
     </picture>
 
-    <div class="bs-banner-info bs-banner__info">
+    <div
+      v-if="bannerType !== 'banner'"
+      class="bs-banner-info bs-banner__info"
+      :class="{'bs-banner-info--is-card' : bannerType === 'card'}"
+    >
       <h2 class="bs-banner-info__title">
         We're more than just hairstyle
       </h2>
@@ -16,7 +23,10 @@
       </p>
 
       <div class="bs-banner-info__wrapper">
-        <ul class="bs-banner-info-menu">
+        <ul
+          v-if="bannerType === 'full'"
+          class="bs-banner-info-menu"
+        >
           <li class="bs-banner-info-menu__item">
             <router-link to="/makeup">Makeup</router-link>
           </li>
@@ -36,14 +46,24 @@
   </section>
 </template>
 
-<script>
-import { defineComponent } from 'vue';
+<script lang="ts">
+import { defineComponent, PropType } from 'vue';
 
 export default defineComponent({
   name: 'BeautyShopBanner',
+  props: {
+    bannerType: {
+      type: String as PropType<string>,
+      required: true,
+      default: 'full',
+      validator(value: string) {
+        return ['banner', 'card', 'full'].includes(value);
+      },
+    },
+  },
 });
 </script>
 
 <style scoped lang="scss">
-
+@import '@/components/styles/BeautyShopBanner/component';
 </style>

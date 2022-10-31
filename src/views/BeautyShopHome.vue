@@ -1,6 +1,6 @@
 <template>
   <div class="bs-home">
-    <BeautyShopBanner class="bs-home__banner" />
+    <BeautyShopBanner bannerType="full" class="bs-home__banner" />
   </div>
 </template>
 
@@ -19,4 +19,6 @@ export default defineComponent({
 });
 </script>
 
-<style scoped lang="scss"></style>
+<style scoped lang="scss">
+@import '@/styles/BeautyShop/component';
+</style>

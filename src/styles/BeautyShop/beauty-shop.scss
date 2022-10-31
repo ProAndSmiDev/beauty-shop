@@ -2,6 +2,11 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: hsl(0, 0%, 90%);
+
+  &__wrapper {
+    background-color: var(--primary);
+  }
 
   &__header,
   &__main,
