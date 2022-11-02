@@ -21,5 +21,5 @@ module.exports = defineConfig({
     const types = ['vue-modules', 'vue', 'normal-modules', 'normal'];
     types.forEach((type) => addStyleResources(config.module.rule('scss').oneOf(type)));
   },
-  publicPath: process.env.NODE_ENV === 'production' ? '/REPO_NAME/' : '/',
+  publicPath: process.env.NODE_ENV === 'production' ? '/beauty-shop/' : '/',
 });
