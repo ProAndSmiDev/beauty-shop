@@ -1,13 +1,9 @@
 <template>
   <router-link class="bs-logo" to="/">
     <picture class="bs-logo__pic">
-      <source srcset="@/assets/img/logo.webp" type="image/webp">
+      <source :srcset="require('@/assets/img/logo.webp')" type="image/webp" />
 
-      <img
-        src="@/assets/img/logo.jpg"
-        alt="Beauty shop's logo"
-        class="bs-logo__img"
-      >
+      <img :src="require('@/assets/img/logo.jpg')" alt="Beauty shop's logo" class="bs-logo__img" />
     </picture>
   </router-link>
 </template>

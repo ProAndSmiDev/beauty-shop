@@ -10,7 +10,7 @@
         <BeautyShopContacts class="bs__contacts" />
       </header>
       <main class="bs-main bs__main">
-        <router-view/>
+        <router-view />
       </main>
       <footer class="bs-footer bs__footer">
         <BeautyShopCopyright class="bs-footer__copyright">
@@ -39,5 +39,5 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@import '@/styles/BeautyShop/component';
+@import '@/styles/BeautyShopHome/component';
 </style>

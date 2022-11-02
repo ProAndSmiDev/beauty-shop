@@ -2,9 +2,7 @@
   <div class="bs-contacts">
     <div class="bs-contacts-mail bs-contacts__mail">
       <p class="bs-contacts-mail__title">E-mail</p>
-      <a
-        href="mailto:frenchbraiding030@gmail.com"
-        class="bs-contacts-mail__info">
+      <a href="mailto:frenchbraiding030@gmail.com" class="bs-contacts-mail__info">
         Frenchbraiding030@gmail.com
       </a>
     </div>

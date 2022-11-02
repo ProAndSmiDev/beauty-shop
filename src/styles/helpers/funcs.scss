@@ -1,7 +1,9 @@
+@use 'sass:math';
+
 @function em($px-size, $fz-size) {
-  @return #{$px-size / $fz-size}em;
+  @return #{math.div($px-size, $fz-size)}em;
 }
 
 @function vw($px-vw, $base-vw) {
-  @return ($px-vw * 100vw) / $base-vw;
+  @return #{math.div(($px-vw * 100), $base-vw)}vw;
 }
