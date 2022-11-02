@@ -63,6 +63,7 @@ export default defineComponent({
               <img
                 :src="require(`@/assets/img/socials/${item.pic}.png`)"
                 :alt="`We are in «${item.name}»`"
+                class="bs-first-screen-socials-link__img"
               />
             </picture>
           </a>

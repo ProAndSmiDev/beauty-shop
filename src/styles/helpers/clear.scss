@@ -8,6 +8,10 @@ $font_family: 'Arial', 'Roboto', sans-serif !default;
 
   padding: 0;
   box-sizing: border-box;
+
+  @media(prefers-color-scheme: dark) {
+    filter: invert(0) !important;
+  }
 }
 
 html {

@@ -2,7 +2,7 @@
   $fz: 24;
   padding-top: em(67, $fz);
   padding-bottom: em(67, $fz);
-  color: var(--secondary);
+  color: $secondary;
   text-align: center;
   font-size: em($fz, $fz_base);
 }

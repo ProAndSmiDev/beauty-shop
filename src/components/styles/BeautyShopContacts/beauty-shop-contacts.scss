@@ -18,7 +18,7 @@
 
   &__info {
     margin-top: em(20, $fz);
-    color: var(--secondary);
+    color: $secondary;
   }
 }
 
@@ -31,14 +31,20 @@
     position: absolute;
     top: 50%;
     left: em(-86, $fz);
+    width: em(57, $fz);
+    height: em(56, $fz);
 
-    content: url($img_dir + 'contacts/phone.png');
+    content: '';
+
+    display: block;
+    background-image: url($img_dir + 'contacts/phone.png');
+    background-size: cover;
     transform: translateY(-50%);
   }
 
   &__info {
     $fz: 24;
-    color: var(--secondary);
+    color: $secondary;
     font-size: em($fz, $fz_base);
     font-weight: 600;
   }
@@ -46,7 +52,7 @@
   &__place {
     $fz: 24;
     margin-top: em(10, $fz);
-    color: var(--secondary);
+    color: $secondary;
     font-size: em($fz, $fz_base);
     letter-spacing: 0.1em;
   }
@@ -59,7 +65,7 @@
 
   &__title {
     $fz: 24;
-    color: var(--secondary);
+    color: $secondary;
     text-transform: uppercase;
     font-size: em($fz, $fz_base);
     font-weight: 600;
@@ -68,7 +74,7 @@
   &__info {
     $fz: 24;
     margin-top: em(10, $fz);
-    color: var(--secondary);
+    color: $secondary;
     font-size: em($fz, $fz_base);
   }
 }

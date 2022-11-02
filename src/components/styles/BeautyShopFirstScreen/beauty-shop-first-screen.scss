@@ -36,6 +36,13 @@
           }
         }
       }
+      
+      &-socials-link {
+        &__img {
+          width: auto;
+          height: em(69, $fz);
+        }
+      }
 
       &-info {
         padding-right: em(65, $fz);
@@ -43,7 +50,7 @@
 
         &__title {
           $fz: 36;
-          color: var(--secondary);
+          color: $secondary;
           text-transform: uppercase;
           font-size: em($fz, $fz_base);
           font-weight: 600;
@@ -70,14 +77,14 @@
 
           padding: em(15 55, $fz);
           border-radius: em(50, $fz);
-          background-color: var(--theme);
-          color: var(--primary);
-          box-shadow: em(10 10 10, $fz) hsla(0, 0%, 0%, 0.25);
+          background-color: $theme;
+          color: $primary;
+          box-shadow: em(10 10 10, $fz) transparentize($secondary, 0.75);
           font-size: em($fz, $fz_base);
           transition: background-color 0.3s ease-in-out;
 
           &:hover {
-            background-color: var(--border-clr);
+            background-color: $border_clr;
           }
         }
       }
@@ -95,12 +102,12 @@
 
         &__link {
           $fz: 24;
-          color: var(--theme);
+          color: $theme;
           font-size: em($fz, $fz_base);
           transition: color 0.3s ease-in-out;
 
           &:hover {
-            color: var(--border-clr);
+            color: $border_clr;
           }
         }
       }
