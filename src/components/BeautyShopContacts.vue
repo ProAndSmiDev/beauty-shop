@@ -1,3 +1,11 @@
+<script>
+import { defineComponent } from 'vue';
+
+export default defineComponent({
+  name: 'BeautyShopContacts',
+});
+</script>
+
 <template>
   <div class="bs-contacts">
     <div class="bs-contacts-mail bs-contacts__mail">
@@ -13,14 +21,6 @@
     </div>
   </div>
 </template>
-
-<script>
-import { defineComponent } from 'vue';
-
-export default defineComponent({
-  name: 'BeautyShopContacts',
-});
-</script>
 
 <style scoped lang="scss">
 @import '@/components/styles/BeautyShopContacts/component';

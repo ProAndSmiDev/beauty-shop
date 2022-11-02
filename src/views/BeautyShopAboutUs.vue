@@ -1,13 +1,3 @@
-<template>
-  <div class="bs-about-us">
-    <BeautyShopFirstScreen
-      firstScreenType="card"
-      :firstScreenInfo="firstScreenAboutUs"
-      class="bs-about-us__banner"
-    />
-  </div>
-</template>
-
 <script lang="ts">
 import { defineComponent } from 'vue';
 import { firstScreenAboutUs } from '@/ts/constants/firstScreenAboutUs';
@@ -28,6 +18,16 @@ export default defineComponent({
   },
 });
 </script>
+
+<template>
+  <div class="bs-about-us">
+    <BeautyShopFirstScreen
+      firstScreenType="card"
+      :firstScreenInfo="firstScreenAboutUs"
+      class="bs-about-us__banner"
+    />
+  </div>
+</template>
 
 <style scoped lang="scss">
 @import '@/styles/BeautyShopAboutUs/component';

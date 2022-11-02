@@ -1,13 +1,3 @@
-<template>
-  <div class="bs-price">
-    <BeautyShopFirstScreen
-      firstScreenType="banner"
-      :firstScreenInfo="firstScreenPrice"
-      class="bs-pprice__banner"
-    />
-  </div>
-</template>
-
 <script lang="ts">
 import { defineComponent } from 'vue';
 import { firstScreenPrice } from '@/ts/constants/firstScreenPrice';
@@ -28,6 +18,16 @@ export default defineComponent({
   },
 });
 </script>
+
+<template>
+  <div class="bs-price">
+    <BeautyShopFirstScreen
+      firstScreenType="banner"
+      :firstScreenInfo="firstScreenPrice"
+      class="bs-pprice__banner"
+    />
+  </div>
+</template>
 
 <style scoped lang="scss">
 @import '@/styles/BeautyShopPrice/component';

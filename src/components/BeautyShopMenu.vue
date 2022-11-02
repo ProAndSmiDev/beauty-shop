@@ -1,3 +1,11 @@
+<script lang="ts">
+import { defineComponent } from 'vue';
+
+export default defineComponent({
+  name: 'BeautyShopMenu',
+});
+</script>
+
 <template>
   <nav class="bs-menu">
     <router-link class="bs-menu__link" to="/">Home</router-link>
@@ -8,14 +16,6 @@
     <router-link class="bs-menu__link" to="/about-us">About us</router-link>
   </nav>
 </template>
-
-<script lang="ts">
-import { defineComponent } from 'vue';
-
-export default defineComponent({
-  name: 'BeautyShopMenu',
-});
-</script>
 
 <style scoped lang="scss">
 @import '@/components/styles/BeautyShopMenu/component';

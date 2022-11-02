@@ -1,4 +1,4 @@
-import '@/styles/helpers/globals.scss';
+import '@/styles/helpers/clear.scss';
 import Vue from 'vue';
 import BeautyShop from './BeautyShop.vue';
 import router from './router';

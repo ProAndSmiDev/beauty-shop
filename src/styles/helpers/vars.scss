@@ -9,6 +9,7 @@
   --border-clr: hsl(216, 100%, 53%);
 }
 
-$font: 'Montserrat', 'Arial', sans-serif;
+$font_family: 'Montserrat', 'Arial', sans-serif;
 $mw_wrapper: em(1440, $fz);
 $needs_wrapper_paddings: false;
+$img_dir: '@/assets/img/';

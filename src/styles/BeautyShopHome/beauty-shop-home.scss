@@ -13,6 +13,14 @@
   &__footer {
     width: 100%;
   }
+  
+  &__main {
+    margin-top: em(30, $fz);
+  }
+  
+  &__contacts {
+    margin-right: em(112, $fz);
+  }
 }
 
 .bs-header {

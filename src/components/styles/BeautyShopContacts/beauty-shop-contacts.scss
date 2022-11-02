@@ -1,12 +1,74 @@
+.bs-contacts {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  &__mail {
+    margin-right: em(138, $fz);
+  }
+
+  &__phone {
+    position: relative;
+  }
+}
+
 .bs-contacts-mail {
+  display: flex;
+  flex-direction: column;
+
   &__info {
+    margin-top: em(20, $fz);
     color: var(--secondary);
   }
 }
 
 .bs-contacts-phone {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+
+  &::before {
+    position: absolute;
+    top: 50%;
+    left: em(-86, $fz);
+
+    content: url($img_dir + 'contacts/phone.png');
+    transform: translateY(-50%);
+  }
+
   &__info {
+    $fz: 24;
     color: var(--secondary);
+    font-size: em($fz, $fz_base);
     font-weight: 600;
+  }
+  
+  &__place {
+    $fz: 24;
+    margin-top: em(10, $fz);
+    color: var(--secondary);
+    font-size: em($fz, $fz_base);
+    letter-spacing: 0.1em;
+  }
+}
+
+.bs-contacts-mail {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+
+  &__title {
+    $fz: 24;
+    color: var(--secondary);
+    text-transform: uppercase;
+    font-size: em($fz, $fz_base);
+    font-weight: 600;
+  }
+
+  &__info {
+    $fz: 24;
+    margin-top: em(10, $fz);
+    color: var(--secondary);
+    font-size: em($fz, $fz_base);
   }
 }

@@ -1,3 +1,20 @@
+<script lang="ts">
+import BeautyShopMenu from '@/components/BeautyShopMenu.vue';
+import BeautyShopLogo from '@/components/BeautyShopLogo.vue';
+import BeautyShopContacts from '@/components/BeautyShopContacts.vue';
+import BeautyShopCopyright from '@/components/BeautyShopCopyright.vue';
+
+export default {
+  name: 'BeautyShop',
+  components: {
+    BeautyShopLogo,
+    BeautyShopMenu,
+    BeautyShopContacts,
+    BeautyShopCopyright,
+  },
+};
+</script>
+
 <template>
   <div id="app" class="bs page">
     <div class="u-wrapper bs__wrapper">
@@ -20,23 +37,6 @@
     </div>
   </div>
 </template>
-
-<script lang="ts">
-import BeautyShopMenu from '@/components/BeautyShopMenu.vue';
-import BeautyShopLogo from '@/components/BeautyShopLogo.vue';
-import BeautyShopCopyright from '@/components/BeautyShopCopyright.vue';
-import BeautyShopContacts from '@/components/BeautyShopContacts.vue';
-
-export default {
-  name: 'BeautyShop',
-  components: {
-    BeautyShopLogo,
-    BeautyShopMenu,
-    BeautyShopContacts,
-    BeautyShopCopyright,
-  },
-};
-</script>
 
 <style scoped lang="scss">
 @import '@/styles/BeautyShopHome/component';

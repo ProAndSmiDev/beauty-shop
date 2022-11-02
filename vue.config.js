@@ -2,7 +2,8 @@ const { defineConfig } = require('@vue/cli-service');
 const path = require('path');
 
 function addStyleResources(rule) {
-  rule.use('style-resource')
+  rule
+    .use('style-resource')
     .loader('style-resources-loader')
     .options({
       patterns: [
@@ -22,4 +23,7 @@ module.exports = defineConfig({
     types.forEach((type) => addStyleResources(config.module.rule('scss').oneOf(type)));
   },
   publicPath: process.env.NODE_ENV === 'production' ? '/beauty-shop/' : '/',
+  css: {
+    sourceMap: process.env.NODE_ENV !== 'production',
+  },
 });

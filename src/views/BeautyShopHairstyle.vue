@@ -1,13 +1,3 @@
-<template>
-  <div class="bs-hairstyle">
-    <BeautyShopFirstScreen
-      firstScreenType="card"
-      :firstScreenInfo="firstScreenHairstyle"
-      class="bs-hairstyle__banner"
-    />
-  </div>
-</template>
-
 <script lang="ts">
 import { defineComponent } from 'vue';
 import { firstScreenHairstyle } from '@/ts/constants/firstScreenHairstyle';
@@ -28,6 +18,16 @@ export default defineComponent({
   },
 });
 </script>
+
+<template>
+  <div class="bs-hairstyle">
+    <BeautyShopFirstScreen
+      firstScreenType="card"
+      :firstScreenInfo="firstScreenHairstyle"
+      class="bs-hairstyle__banner"
+    />
+  </div>
+</template>
 
 <style scoped lang="scss">
 @import '@/styles/BeautyShopHairstyle/component';

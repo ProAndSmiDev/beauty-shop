@@ -1,3 +1,11 @@
+<script lang="ts">
+import { defineComponent } from 'vue';
+
+export default defineComponent({
+  name: 'BeautyShopLogo',
+});
+</script>
+
 <template>
   <router-link class="bs-logo" to="/">
     <picture class="bs-logo__pic">
@@ -7,14 +15,6 @@
     </picture>
   </router-link>
 </template>
-
-<script lang="ts">
-import { defineComponent } from 'vue';
-
-export default defineComponent({
-  name: 'BeautyShopLogo',
-});
-</script>
 
 <style scoped lang="scss">
 @import '@/components/styles/BeautyShopLogo/component';

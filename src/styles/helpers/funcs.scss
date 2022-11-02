@@ -1,9 +1,47 @@
 @use 'sass:math';
 
-@function em($px-size, $fz-size) {
-  @return #{math.div($px-size, $fz-size)}em;
+@function strip-unit($number) {
+  @return math.div($number, ($number * 0 + 1));
 }
 
-@function vw($px-vw, $base-vw) {
-  @return #{math.div(($px-vw * 100), $base-vw)}vw;
+@function em($values...) {
+  $context: strip-unit(nth($values, length($values)));
+  $result: ();
+  $separator: list-separator($values);
+
+  @for $c from 1 through length($values) - 1 {
+    $value: nth($values, $c);
+
+    @if type-of($value) == 'number' {
+      $value: strip-unit($value);
+      $result: append($result, math.div($value, $context) * 1em, $separator);
+    } @else if type-of($value) == 'list' {
+      $result: append($result, em(append($value, $context)...), $separator);
+    } @else {
+      $result: append($result, $value, $separator);
+    }
+  }
+
+  @return if(length($result) == 1, nth($result, 1), $result);
+}
+
+@function vw($values...) {
+  $context: strip-unit(nth($values, length($values)));
+  $result: ();
+  $separator: list-separator($values);
+
+  @for $c from 1 through length($values) - 1 {
+    $value: nth($values, $c);
+
+    @if type-of($value) == 'number' {
+      $value: strip-unit($value);
+      $result: append($result, math.div($value, $context) * 100vw, $separator);
+    } @else if type-of($value) == 'list' {
+      $result: append($result, vw(append($value, $context)...), $separator);
+    } @else {
+      $result: append($result, $value, $separator);
+    }
+  }
+
+  @return if(length($result) == 1, nth($result, 1), $result);
 }

@@ -1,6 +1,7 @@
 $mw_wrapper: em(1170, $fz) !default;
 $needs_wrapper_paddings: true !default;
-$font: 'Arial', 'Roboto', sans-serif !default;
+$font_standard: normal normal 16px / 1.3;
+$font_family: 'Arial', 'Roboto', sans-serif !default;
 
 * {
   margin: 0;
@@ -27,11 +28,6 @@ main {
   flex: 1 0 auto;
 }
 
-section {
-  padding-top: em(90, $fz);
-  padding-bottom: em(90, $fz);
-}
-
 picture {
   width: 100%;
 
@@ -55,6 +51,7 @@ button {
   outline: none;
   border: unset;
   background-color: transparent;
+  text-align: inherit;
   font: inherit;
 
   &:focus {
@@ -83,7 +80,7 @@ footer {
 }
 
 body {
-  font: #{$fz_base}px/1.3 400 $font;
+  font: $font_standard $font_family;
 }
 
 .header {

@@ -1,13 +1,3 @@
-<template>
-  <div class="bs-home">
-    <BeautyShopFirstScreen
-      firstScreenType="full"
-      :firstScreenInfo="firstScreenHome"
-      class="bs-home__banner"
-    />
-  </div>
-</template>
-
 <script lang="ts">
 import { defineComponent } from 'vue';
 import { firstScreenHome } from '@/ts/constants/firstScreenHome';
@@ -28,6 +18,16 @@ export default defineComponent({
   },
 });
 </script>
+
+<template>
+  <div class="bs-home">
+    <BeautyShopFirstScreen
+      firstScreenType="full"
+      :firstScreenInfo="firstScreenHome"
+      class="bs-home__banner"
+    />
+  </div>
+</template>
 
 <style scoped lang="scss">
 @import '@/styles/BeautyShopHome/component';

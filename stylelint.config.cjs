@@ -38,7 +38,10 @@ module.exports = {
     'font-family-name-quotes': 'always-unless-keyword',
     'font-weight-notation': 'numeric',
     'function-comma-space-after': 'always-single-line',
-    'max-nesting-depth': 4,
+    'max-nesting-depth': {
+      int: 4,
+      ignore: ["pseudo-classes"],
+    },
     'media-feature-name-no-vendor-prefix': true,
     'number-leading-zero': 'always',
     'property-no-vendor-prefix': [
