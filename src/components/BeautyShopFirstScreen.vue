@@ -97,7 +97,7 @@ export default defineComponent({
         </ul>
 
         <button v-if="firstScreenInfo.btnText" class="bs-first-screen-info__btn">
-          {{ firstScreenInfo.btnText }}
+          <span class="bs-first-screen-info-btn__text">{{ firstScreenInfo.btnText }}</span>
         </button>
       </div>
     </div>
