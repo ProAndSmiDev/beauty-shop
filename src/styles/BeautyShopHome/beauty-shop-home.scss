@@ -4,8 +4,12 @@
   align-items: center;
   background-color: hsl(0, 0%, 90%);
 
+  @media(max-width: $pc) {
+    font-size: vw(16, 1440);
+  }
+
   &__wrapper {
-    background-color: var(--primary);
+    background-color: $primary;
   }
 
   &__header,

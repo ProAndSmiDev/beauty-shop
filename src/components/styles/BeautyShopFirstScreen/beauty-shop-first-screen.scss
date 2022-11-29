@@ -4,7 +4,7 @@
   &__media {
     position: relative;
   }
-  
+
   &__socials {
     position: absolute;
   }
@@ -29,6 +29,13 @@
           &:not(:last-child) {
             margin-right: em(50, $fz);
           }
+        }
+      }
+
+      &-socials-link {
+        &__img {
+          width: auto;
+          height: em(69, $fz);
         }
       }
 
@@ -83,7 +90,7 @@
         top: em(20, $fz);
         right: em(25, $fz);
       }
-      
+
       &__info {
         width: 100%;
         max-width: em(571, $fz);

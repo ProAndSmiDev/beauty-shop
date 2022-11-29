@@ -15,6 +15,7 @@ export default defineComponent({
   },
   metaInfo: {
     title: '«Beauty Shop» - Main Page',
+    meta: [],
   },
 });
 </script>

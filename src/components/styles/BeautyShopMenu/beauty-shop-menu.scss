@@ -3,7 +3,7 @@
 
   &__link {
     $fz: 24;
-    color: var(--secondary);
+    color: $secondary;
     text-transform: uppercase;
     font-size: em($fz, $fz_base);
     letter-spacing: 0.1em;
@@ -14,7 +14,7 @@
 
     ::v-deep {
       &.router-link-exact-active {
-        color: var(--theme);
+        color: $theme;
       }
     }
   }
