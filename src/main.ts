@@ -6,6 +6,6 @@ import router from './router';
 Vue.config.productionTip = false;
 
 new Vue({
-  router,
-  render: (h) => h(BeautyShop),
+    router,
+    render: (h) => h(BeautyShop),
 }).$mount('#app');

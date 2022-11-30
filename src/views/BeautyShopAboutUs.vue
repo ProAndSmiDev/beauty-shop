@@ -4,29 +4,28 @@ import { firstScreenAboutUs } from '@/ts/constants/firstScreenAboutUs';
 import BeautyShopFirstScreen from '@/components/BeautyShopFirstScreen.vue';
 
 export default defineComponent({
-  name: 'BeautyShopAboutUs',
-  components: {
-    BeautyShopFirstScreen,
-  },
-  setup() {
-    return {
-      firstScreenAboutUs,
-    };
-  },
-  metaInfo: {
-    title: '«Beauty Shop» - About Us',
-  },
+    name: 'BeautyShopAboutUs',
+    components: {
+        BeautyShopFirstScreen,
+    },
+    setup() {
+        return {
+            firstScreenAboutUs,
+        };
+    },
+    metaInfo: {
+        title: '«Beauty Shop» - About Us',
+    },
 });
 </script>
 
 <template>
-  <div class="bs-about-us">
-    <BeautyShopFirstScreen
-      firstScreenType="card"
-      :firstScreenInfo="firstScreenAboutUs"
-      class="bs-about-us__banner"
-    />
-  </div>
+    <div class="bs-about-us">
+        <BeautyShopFirstScreen
+            firstScreenType="card"
+            :firstScreenInfo="firstScreenAboutUs"
+            class="bs-about-us__banner" />
+    </div>
 </template>
 
 <style scoped lang="scss">

@@ -5,32 +5,31 @@ import BeautyShopServices from '@/components/BeautyShopServices.vue';
 import BeautyShopFirstScreen from '@/components/BeautyShopFirstScreen.vue';
 
 export default defineComponent({
-  name: 'BeautyShopHome',
-  components: {
-    BeautyShopServices,
-    BeautyShopFirstScreen,
-  },
-  setup() {
-    return {
-      firstScreenHome,
-    };
-  },
-  metaInfo: {
-    title: '«Beauty Shop» - Main Page',
-    meta: [],
-  },
+    name: 'BeautyShopHome',
+    components: {
+        BeautyShopServices,
+        BeautyShopFirstScreen,
+    },
+    setup() {
+        return {
+            firstScreenHome,
+        };
+    },
+    metaInfo: {
+        title: '«Beauty Shop» - Main Page',
+        meta: [],
+    },
 });
 </script>
 
 <template>
-  <div class="bs-home">
-    <BeautyShopFirstScreen
-      firstScreenType="full"
-      :firstScreenInfo="firstScreenHome"
-      class="bs-home__banner"
-    />
-    <BeautyShopServices class="bs__services" />
-  </div>
+    <div class="bs-home">
+        <BeautyShopFirstScreen
+            firstScreenType="full"
+            :firstScreenInfo="firstScreenHome"
+            class="bs-home__banner" />
+        <BeautyShopServices class="bs__services" />
+    </div>
 </template>
 
 <style scoped lang="scss">

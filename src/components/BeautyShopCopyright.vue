@@ -2,14 +2,14 @@
 import { defineComponent } from 'vue';
 
 export default defineComponent({
-  name: 'BeautyShopCopyright',
+    name: 'BeautyShopCopyright',
 });
 </script>
 
 <template>
-  <p class="bs-copyright">
-    <slot></slot>
-  </p>
+    <p class="bs-copyright">
+        <slot></slot>
+    </p>
 </template>
 
 <style scoped lang="scss">
