@@ -1,9 +1,9 @@
 <script lang="ts">
-import { defineComponent } from 'vue';
+    import { defineComponent } from 'vue';
 
-export default defineComponent({
-    name: 'BeautyShopLogo',
-});
+    export default defineComponent({
+        name: 'BeautyShopLogo',
+    });
 </script>
 
 <template>
@@ -27,5 +27,5 @@ export default defineComponent({
 </template>
 
 <style scoped lang="scss">
-@import '@/components/styles/BeautyShopLogo/component';
+    @import '@/components/styles/BeautyShopLogo/component';
 </style>

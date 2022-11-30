@@ -23,6 +23,7 @@ module.exports = {
                 endOfLine: 'crlf',
                 singleAttributePerLine: true,
                 printWidth: 120,
+                vueIndentScriptAndStyle: true,
             },
         ],
     },

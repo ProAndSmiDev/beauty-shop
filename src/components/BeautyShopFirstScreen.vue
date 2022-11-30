@@ -1,30 +1,30 @@
 <script lang="ts">
-import { socials } from '@/ts/constants/socials';
-import { defineComponent, PropType } from 'vue';
+    import { socials } from '@/ts/constants/socials';
+    import { defineComponent, PropType } from 'vue';
 
-export default defineComponent({
-    name: 'BeautyShopFirstScreen',
-    props: {
-        firstScreenType: {
-            type: String as PropType<string>,
-            required: true,
-            default: 'full',
-            validator(value: string) {
-                return ['banner', 'card', 'full'].includes(value);
+    export default defineComponent({
+        name: 'BeautyShopFirstScreen',
+        props: {
+            firstScreenType: {
+                type: String as PropType<string>,
+                required: true,
+                default: 'full',
+                validator(value: string) {
+                    return ['banner', 'card', 'full'].includes(value);
+                },
+            },
+            firstScreenInfo: {
+                type: Object as PropType<object>,
+                required: true,
+                default: () => ({}),
             },
         },
-        firstScreenInfo: {
-            type: Object as PropType<object>,
-            required: true,
-            default: () => ({}),
+        setup() {
+            return {
+                socials,
+            };
         },
-    },
-    setup() {
-        return {
-            socials,
-        };
-    },
-});
+    });
 </script>
 
 <template>
@@ -128,5 +128,5 @@ export default defineComponent({
 </template>
 
 <style scoped lang="scss">
-@import '@/components/styles/BeautyShopFirstScreen/component';
+    @import '@/components/styles/BeautyShopFirstScreen/component';
 </style>

@@ -1,18 +1,18 @@
 <script lang="ts">
-import BeautyShopMenu from '@/components/BeautyShopMenu.vue';
-import BeautyShopLogo from '@/components/BeautyShopLogo.vue';
-import BeautyShopContacts from '@/components/BeautyShopContacts.vue';
-import BeautyShopCopyright from '@/components/BeautyShopCopyright.vue';
+    import BeautyShopMenu from '@/components/BeautyShopMenu.vue';
+    import BeautyShopLogo from '@/components/BeautyShopLogo.vue';
+    import BeautyShopContacts from '@/components/BeautyShopContacts.vue';
+    import BeautyShopCopyright from '@/components/BeautyShopCopyright.vue';
 
-export default {
-    name: 'BeautyShop',
-    components: {
-        BeautyShopLogo,
-        BeautyShopMenu,
-        BeautyShopContacts,
-        BeautyShopCopyright,
-    },
-};
+    export default {
+        name: 'BeautyShop',
+        components: {
+            BeautyShopLogo,
+            BeautyShopMenu,
+            BeautyShopContacts,
+            BeautyShopCopyright,
+        },
+    };
 </script>
 
 <template>
@@ -42,5 +42,5 @@ export default {
 </template>
 
 <style scoped lang="scss">
-@import '@/styles/BeautyShopHome/component';
+    @import '@/styles/BeautyShopHome/component';
 </style>

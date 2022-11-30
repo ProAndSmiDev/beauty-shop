@@ -1,22 +1,22 @@
 <script lang="ts">
-import { defineComponent } from 'vue';
-import { firstScreenMakeup } from '@/ts/constants/firstScreenMakeup';
-import BeautyShopFirstScreen from '@/components/BeautyShopFirstScreen.vue';
+    import { defineComponent } from 'vue';
+    import { firstScreenMakeup } from '@/ts/constants/firstScreenMakeup';
+    import BeautyShopFirstScreen from '@/components/BeautyShopFirstScreen.vue';
 
-export default defineComponent({
-    name: 'BeautyShopMakeup',
-    components: {
-        BeautyShopFirstScreen,
-    },
-    setup() {
-        return {
-            firstScreenMakeup,
-        };
-    },
-    metaInfo: {
-        title: '«Beauty Shop» - Makeup',
-    },
-});
+    export default defineComponent({
+        name: 'BeautyShopMakeup',
+        components: {
+            BeautyShopFirstScreen,
+        },
+        setup() {
+            return {
+                firstScreenMakeup,
+            };
+        },
+        metaInfo: {
+            title: '«Beauty Shop» - Makeup',
+        },
+    });
 </script>
 
 <template>
@@ -24,10 +24,11 @@ export default defineComponent({
         <BeautyShopFirstScreen
             firstScreenType="card"
             :firstScreenInfo="firstScreenMakeup"
-            class="bs-makeup__banner" />
+            class="bs-makeup__banner"
+        />
     </div>
 </template>
 
 <style scoped lang="scss">
-@import '@/styles/BeautyShopMakeup/component';
+    @import '@/styles/BeautyShopMakeup/component';
 </style>

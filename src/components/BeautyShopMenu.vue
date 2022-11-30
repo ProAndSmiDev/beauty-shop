@@ -1,9 +1,9 @@
 <script lang="ts">
-import { defineComponent } from 'vue';
+    import { defineComponent } from 'vue';
 
-export default defineComponent({
-    name: 'BeautyShopMenu',
-});
+    export default defineComponent({
+        name: 'BeautyShopMenu',
+    });
 </script>
 
 <template>
@@ -48,5 +48,5 @@ export default defineComponent({
 </template>
 
 <style scoped lang="scss">
-@import '@/components/styles/BeautyShopMenu/component';
+    @import '@/components/styles/BeautyShopMenu/component';
 </style>

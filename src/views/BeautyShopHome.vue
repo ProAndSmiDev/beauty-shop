@@ -1,25 +1,25 @@
 <script lang="ts">
-import { defineComponent } from 'vue';
-import { firstScreenHome } from '@/ts/constants/firstScreenHome';
-import BeautyShopServices from '@/components/BeautyShopServices.vue';
-import BeautyShopFirstScreen from '@/components/BeautyShopFirstScreen.vue';
+    import { defineComponent } from 'vue';
+    import { firstScreenHome } from '@/ts/constants/firstScreenHome';
+    import BeautyShopServices from '@/components/BeautyShopServices.vue';
+    import BeautyShopFirstScreen from '@/components/BeautyShopFirstScreen.vue';
 
-export default defineComponent({
-    name: 'BeautyShopHome',
-    components: {
-        BeautyShopServices,
-        BeautyShopFirstScreen,
-    },
-    setup() {
-        return {
-            firstScreenHome,
-        };
-    },
-    metaInfo: {
-        title: '«Beauty Shop» - Main Page',
-        meta: [],
-    },
-});
+    export default defineComponent({
+        name: 'BeautyShopHome',
+        components: {
+            BeautyShopServices,
+            BeautyShopFirstScreen,
+        },
+        setup() {
+            return {
+                firstScreenHome,
+            };
+        },
+        metaInfo: {
+            title: '«Beauty Shop» - Main Page',
+            meta: [],
+        },
+    });
 </script>
 
 <template>
@@ -27,11 +27,12 @@ export default defineComponent({
         <BeautyShopFirstScreen
             firstScreenType="full"
             :firstScreenInfo="firstScreenHome"
-            class="bs-home__banner" />
+            class="bs-home__banner"
+        />
         <BeautyShopServices class="bs__services" />
     </div>
 </template>
 
 <style scoped lang="scss">
-@import '@/styles/BeautyShopHome/component';
+    @import '@/styles/BeautyShopHome/component';
 </style>
