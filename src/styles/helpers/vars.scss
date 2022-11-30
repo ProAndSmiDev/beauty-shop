@@ -1,12 +1,15 @@
 $pc: 1439px;
+
+$error: hsl(0, 100%, 50%);
+$good: hsl(130, 100%, 36%);
+
 $img_dir: '@/assets/img/';
 $mw_wrapper: em(1440, $fz);
+$needs_wrapper_paddings: false;
+$font_family: 'Montserrat', 'Arial', sans-serif;
+
 $primary: hsl(0, 0%, 100%);
 $secondary: hsl(0, 0%, 0%);
-$text_clr: hsl(0, 0%, 47%);
+$accent: lighten($secondary, 47%);
 $theme: hsl(216, 100%, 66%);
-$main_clr: hsl(0, 100%, 50%);
-$needs_wrapper_paddings: false;
-$price_clr: hsl(130, 100%, 36%);
-$border_clr: hsl(216, 100%, 53%);
-$font_family: 'Montserrat', 'Arial', sans-serif;
+$theme_accent: darken($theme, 13%);

@@ -111,7 +111,7 @@
         &__promo {
           $fz: 36;
           margin-top: em(70, $fz);
-          color: var(--secondary);
+          color: $secondary;
           font-size: em($fz, $fz_base);
         }
 
@@ -166,7 +166,7 @@
 .bs-first-screen-info {
   &__title {
     $fz: 36;
-    color: var(--secondary);
+    color: $secondary;
     text-transform: uppercase;
     font-size: em($fz, $fz_base);
     font-weight: 600;
@@ -174,13 +174,13 @@
 
   &__btn {
     border-radius: em(50, $fz);
-    background-color: var(--theme);
-    color: var(--primary);
+    background-color: $theme;
+    color: $primary;
     box-shadow: em(10 10 10, $fz) hsla(0, 0%, 0%, 0.25);
     transition: background-color 0.3s ease-in-out;
 
     &:hover {
-      background-color: var(--border-clr);
+      background-color: $theme_accent;
     }
   }
 }
@@ -197,11 +197,11 @@
   }
 
   &__link {
-    color: var(--theme);
+    color: $theme;
     transition: color 0.3s ease-in-out;
 
     &:hover {
-      color: var(--border-clr);
+      color: $theme_accent;
     }
   }
 }
