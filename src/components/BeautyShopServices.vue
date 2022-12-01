@@ -1,8 +1,14 @@
 <script lang="ts">
     import { defineComponent } from 'vue';
+    import { services } from '@/ts/constants/services';
 
     export default defineComponent({
         name: 'BeautyShopServices',
+        data() {
+            return {
+                services,
+            };
+        },
     });
 </script>
 
@@ -11,7 +17,11 @@
         <h2 class="bs-services__title">Services</h2>
 
         <ul class="bs-services-list">
-            <li class="bs-services-list__item"></li>
+            <li
+                v-for="(service, idx) in services"
+                :key="`service-item--${idx}`"
+                class="bs-services-list__item"
+            ></li>
         </ul>
     </section>
 </template>

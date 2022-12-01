@@ -20,7 +20,7 @@ module.exports = {
             'error',
             {
                 singleQuote: true,
-                endOfLine: 'crlf',
+                endOfLine: 'auto',
                 singleAttributePerLine: true,
                 printWidth: 120,
                 vueIndentScriptAndStyle: true,
