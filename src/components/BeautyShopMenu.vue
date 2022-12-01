@@ -1,48 +1,27 @@
 <script lang="ts">
     import { defineComponent } from 'vue';
+    import { menu } from '@/ts/constants/menu';
 
     export default defineComponent({
         name: 'BeautyShopMenu',
+        data() {
+            return {
+                menu,
+            };
+        },
     });
 </script>
 
 <template>
     <nav class="bs-menu">
         <router-link
+            :to="menuItem.url"
             class="bs-menu__link"
-            to="/"
+            :title="menuItem.title"
+            :key="`menu-item--${idx}`"
+            v-for="(menuItem, idx) in menu"
         >
-            Home
-        </router-link>
-        <router-link
-            class="bs-menu__link"
-            to="/makeup"
-        >
-            Makeup
-        </router-link>
-        <router-link
-            class="bs-menu__link"
-            to="/hairstyle"
-        >
-            Hairstyle
-        </router-link>
-        <router-link
-            class="bs-menu__link"
-            to="/dresses"
-        >
-            Dresses
-        </router-link>
-        <router-link
-            class="bs-menu__link"
-            to="/price"
-        >
-            Price
-        </router-link>
-        <router-link
-            class="bs-menu__link"
-            to="/about-us"
-        >
-            About us
+            {{ menuItem.text }}
         </router-link>
     </nav>
 </template>

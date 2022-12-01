@@ -1,0 +1,25 @@
+.bs-service {
+  --flex-order: 0;
+
+  &--is-inverted {
+    --flex-order: 1;
+  }
+  &__pic {
+    order: var(--flex-order);
+  }
+
+  &__info {
+  }
+
+  &__title {
+  }
+
+  &__promo {
+  }
+
+  &__navs {
+  }
+
+  &__link {
+  }
+}

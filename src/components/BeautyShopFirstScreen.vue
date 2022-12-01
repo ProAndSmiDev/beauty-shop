@@ -1,6 +1,8 @@
 <script lang="ts">
-    import { socials } from '@/ts/constants/socials';
+    import { menu } from '@/ts/constants/menu';
+    import { IMenu } from '@/ts/interfaces/IMenu';
     import { defineComponent, PropType } from 'vue';
+    import { socials } from '@/ts/constants/socials';
 
     export default defineComponent({
         name: 'BeautyShopFirstScreen',
@@ -20,8 +22,11 @@
             },
         },
         setup() {
+            const getFullBannerMenu: Array<IMenu> = menu.filter((item) => item.isFullBanner);
+
             return {
                 socials,
+                getFullBannerMenu,
             };
         },
     });
@@ -93,26 +98,18 @@
                     v-if="firstScreenType === 'full'"
                     class="bs-first-screen-info-menu"
                 >
-                    <li class="bs-first-screen-info-menu__item">
+                    <li
+                        v-for="(fullBannerMenuItem, idx) in getFullBannerMenu"
+                        :key="`full-banner-menu-item--${idx}`"
+                        class="bs-first-screen-info-menu__item"
+                    >
                         <router-link
-                            to="/makeup"
+                            :to="fullBannerMenuItem.url"
+                            :title="fullBannerMenuItem.title"
                             class="bs-first-screen-info-menu__link"
-                            >Makeup</router-link
                         >
-                    </li>
-                    <li class="bs-first-screen-info-menu__item">
-                        <router-link
-                            to="/hairstyle"
-                            class="bs-first-screen-info-menu__link"
-                            >Hairstyle</router-link
-                        >
-                    </li>
-                    <li class="bs-first-screen-info-menu__item">
-                        <router-link
-                            to="/dresses"
-                            class="bs-first-screen-info-menu__link"
-                            >Dresses</router-link
-                        >
+                            {{ fullBannerMenuItem.text }}
+                        </router-link>
                     </li>
                 </ul>
 
