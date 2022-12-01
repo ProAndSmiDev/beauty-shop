@@ -24,7 +24,7 @@
         <BeautyShopFirstScreen
             firstScreenType="banner"
             :firstScreenInfo="firstScreenPrice"
-            class="bs-pprice__banner"
+            class="bs-price__banner"
         />
     </div>
 </template>

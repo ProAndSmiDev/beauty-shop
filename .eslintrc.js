@@ -22,7 +22,7 @@ module.exports = {
                 singleQuote: true,
                 endOfLine: 'auto',
                 singleAttributePerLine: true,
-                printWidth: 120,
+                printWidth: 100,
                 vueIndentScriptAndStyle: true,
             },
         ],

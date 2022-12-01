@@ -1,7 +1,7 @@
 <script lang="ts">
     import { menu } from '@/ts/constants/menu';
     import { IMenu } from '@/ts/interfaces/IMenu';
-    import { defineComponent, PropType } from 'vue';
+    import { defineComponent, PropType, computed, ComputedRef } from 'vue';
     import { socials } from '@/ts/constants/socials';
 
     export default defineComponent({
@@ -21,11 +21,19 @@
                 default: () => ({}),
             },
         },
-        setup() {
+        data() {
+            const infoClasses: ComputedRef<object> = computed(() => ({
+                'bs-first-screen-info--is-card': this.$props.firstScreenType === 'card',
+            }));
+            const isBanner: ComputedRef<boolean> = computed(() => this.$props.firstScreenType === 'banner');
+            const isFullBanner: ComputedRef<boolean> = computed(() => this.$props.firstScreenType === 'full');
             const getFullBannerMenu: Array<IMenu> = menu.filter((item) => item.isFullBanner);
 
             return {
                 socials,
+                isBanner,
+                infoClasses,
+                isFullBanner,
                 getFullBannerMenu,
             };
         },
@@ -80,9 +88,9 @@
         </div>
 
         <div
-            v-if="firstScreenType !== 'banner'"
+            v-if="!isBanner"
             class="bs-first-screen-info bs-first-screen__info"
-            :class="{ 'bs-first-screen-info--is-card': firstScreenType === 'card' }"
+            :class="infoClasses"
         >
             <h2 class="bs-first-screen-info__title">
                 {{ firstScreenInfo.title }}
@@ -95,7 +103,7 @@
 
             <div class="bs-first-screen-info__wrapper">
                 <ul
-                    v-if="firstScreenType === 'full'"
+                    v-if="isFullBanner"
                     class="bs-first-screen-info-menu"
                 >
                     <li
@@ -117,7 +125,9 @@
                     v-if="firstScreenInfo.btnText"
                     class="bs-first-screen-info__btn"
                 >
-                    <span class="bs-first-screen-info-btn__text">{{ firstScreenInfo.btnText }}</span>
+                    <span class="bs-first-screen-info-btn__text">
+                        {{ firstScreenInfo.btnText }}
+                    </span>
                 </button>
             </div>
         </div>

@@ -8,8 +8,8 @@
 
 <template>
     <router-link
-        class="bs-logo"
         to="/"
+        class="bs-logo"
     >
         <picture class="bs-logo__pic">
             <source
