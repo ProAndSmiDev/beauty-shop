@@ -17,7 +17,6 @@
         },
         metaInfo: {
             title: '«Beauty Shop» - Main Page',
-            meta: [],
         },
     });
 </script>
