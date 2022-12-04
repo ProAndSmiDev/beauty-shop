@@ -27,5 +27,5 @@
 </template>
 
 <style scoped lang="scss">
-    @import '@/components/styles/BeautyShopMenu/component';
+    @import '@/components/styles/BeautyShopMenu/component.scss';
 </style>

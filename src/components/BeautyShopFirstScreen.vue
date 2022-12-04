@@ -25,8 +25,12 @@
             const infoClasses: ComputedRef<object> = computed(() => ({
                 'bs-first-screen-info--is-card': this.$props.firstScreenType === 'card',
             }));
-            const isBanner: ComputedRef<boolean> = computed(() => this.$props.firstScreenType === 'banner');
-            const isFullBanner: ComputedRef<boolean> = computed(() => this.$props.firstScreenType === 'full');
+            const isBanner: ComputedRef<boolean> = computed(
+                () => this.$props.firstScreenType === 'banner'
+            );
+            const isFullBanner: ComputedRef<boolean> = computed(
+                () => this.$props.firstScreenType === 'full'
+            );
             const getFullBannerMenu: Array<IMenu> = menu.filter((item) => item.isFullBanner);
 
             return {
@@ -135,5 +139,5 @@
 </template>
 
 <style scoped lang="scss">
-    @import '@/components/styles/BeautyShopFirstScreen/component';
+    @import '@/components/styles/BeautyShopFirstScreen/component.scss';
 </style>

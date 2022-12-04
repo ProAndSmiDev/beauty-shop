@@ -34,7 +34,8 @@
             </main>
             <footer class="bs-footer bs__footer">
                 <BeautyShopCopyright class="bs-footer__copyright">
-                    &copy; Copyright 2021 Frenchbraiding. All Rights Reserved. Visit us at social pages
+                    &copy; Copyright 2021 Frenchbraiding. All Rights Reserved. Visit us at social
+                    pages
                 </BeautyShopCopyright>
             </footer>
         </div>
@@ -42,5 +43,5 @@
 </template>
 
 <style scoped lang="scss">
-    @import '@/styles/BeautyShopHome/component';
+    @import '@/styles/BeautyShopHome/component.scss';
 </style>

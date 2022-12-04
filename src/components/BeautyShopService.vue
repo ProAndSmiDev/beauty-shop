@@ -64,5 +64,5 @@
 </template>
 
 <style scoped lang="scss">
-    @import '@/components/styles/BeautyShopService/component';
+    @import '@/components/styles/BeautyShopService/component.scss';
 </style>

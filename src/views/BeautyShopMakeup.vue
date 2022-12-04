@@ -30,5 +30,5 @@
 </template>
 
 <style scoped lang="scss">
-    @import '@/styles/BeautyShopMakeup/component';
+    @import '@/styles/BeautyShopMakeup/component.scss';
 </style>
