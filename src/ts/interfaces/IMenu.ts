@@ -1,6 +1,6 @@
 export interface IMenu {
-    title: string;
-    url: string;
-    text: string;
-    isFullBanner?: boolean;
+    readonly title: string;
+    readonly url: string;
+    readonly text: string;
+    readonly isFullBanner?: boolean;
 }

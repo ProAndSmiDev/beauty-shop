@@ -1,6 +1,6 @@
 export interface IFirstScreen {
-    title?: string;
-    promo?: string;
-    picName: string;
-    btnText?: string;
+    readonly title?: string;
+    readonly promo?: string;
+    readonly picName: string;
+    readonly btnText?: string;
 }

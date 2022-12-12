@@ -1,18 +1,18 @@
 interface IServicesPicture {
-    name: string;
-    alt: string;
+    readonly name: string;
+    readonly alt: string;
 }
 
 interface IServicesNavs {
-    title: string;
-    url: string;
-    text: string;
+    readonly title: string;
+    readonly url: string;
+    readonly text: string;
 }
 
 export interface IServices {
-    title: string;
-    promo: string;
-    pic: IServicesPicture;
-    navs: Array<IServicesNavs>;
-    isInverted?: boolean;
+    readonly title: string;
+    readonly promo: string;
+    readonly pic: IServicesPicture;
+    readonly navs: Array<IServicesNavs>;
+    readonly isInverted?: boolean;
 }
