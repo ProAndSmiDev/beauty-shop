@@ -13,5 +13,5 @@
 </template>
 
 <style scoped lang="scss">
-    @import '@/components/styles/BeautyShopCopyright/component.scss';
+    @import './styles/BeautyShopCopyright/component.scss';
 </style>

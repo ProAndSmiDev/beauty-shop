@@ -1,6 +1,6 @@
 <script lang="ts">
     import { defineComponent } from 'vue';
-    import { menu } from '@/ts/constants/menu';
+    import { menu } from '../ts/constants/menu';
 
     export default defineComponent({
         name: 'BeautyShopMenu',
@@ -27,5 +27,5 @@
 </template>
 
 <style scoped lang="scss">
-    @import '@/components/styles/BeautyShopMenu/component.scss';
+    @import './styles/BeautyShopMenu/component.scss';
 </style>

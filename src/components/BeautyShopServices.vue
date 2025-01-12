@@ -1,7 +1,7 @@
 <script lang="ts">
     import { defineComponent } from 'vue';
-    import { services } from '@/ts/constants/services';
-    import BeautyShopService from '@/components/BeautyShopService.vue';
+    import { services } from '../ts/constants/services';
+    import BeautyShopService from './BeautyShopService.vue';
 
     export default defineComponent({
         name: 'BeautyShopServices',
@@ -34,5 +34,5 @@
 </template>
 
 <style scoped lang="scss">
-    @import '@/components/styles/BeautyShopServices/component.scss';
+    @import './styles/BeautyShopServices/component.scss';
 </style>

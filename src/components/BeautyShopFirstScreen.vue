@@ -1,8 +1,8 @@
 <script lang="ts">
-    import { menu } from '@/ts/constants/menu';
-    import { IMenu } from '@/ts/interfaces/IMenu';
     import { defineComponent, PropType, computed, ComputedRef } from 'vue';
-    import { socials } from '@/ts/constants/socials';
+    import { menu } from '../ts/constants/menu';
+    import { IMenu } from '../ts/interfaces/IMenu';
+    import { socials } from '../ts/constants/socials';
 
     export default defineComponent({
         name: 'BeautyShopFirstScreen',
@@ -52,12 +52,12 @@
         <div class="bs-first-screen__media">
             <picture class="bs-first-screen__pic">
                 <source
-                    :srcset="require(`@/assets/img/first-screen/${firstScreenInfo.picName}.webp`)"
+                    :srcset="require(`../assets/img/first-screen/${firstScreenInfo.picName}.webp`)"
                     type="image/webp"
                 />
 
                 <img
-                    :src="require(`@/assets/img/first-screen/${firstScreenInfo.picName}.jpg`)"
+                    :src="require(`../assets/img/first-screen/${firstScreenInfo.picName}.jpg`)"
                     alt="Beauty shop's photo"
                     class="bs-first-screen__img"
                 />
@@ -76,12 +76,12 @@
                     >
                         <picture class="bs-first-screen-socials-link__pic">
                             <source
-                                :srcset="require(`@/assets/img/socials/${item.pic}.webp`)"
+                                :srcset="require(`../assets/img/socials/${item.pic}.webp`)"
                                 type="image/webp"
                             />
 
                             <img
-                                :src="require(`@/assets/img/socials/${item.pic}.png`)"
+                                :src="require(`../assets/img/socials/${item.pic}.png`)"
                                 :alt="`We are in «${item.name}»`"
                                 class="bs-first-screen-socials-link__img"
                             />
@@ -139,5 +139,5 @@
 </template>
 
 <style scoped lang="scss">
-    @import '@/components/styles/BeautyShopFirstScreen/component.scss';
+    @import './styles/BeautyShopFirstScreen/component.scss';
 </style>

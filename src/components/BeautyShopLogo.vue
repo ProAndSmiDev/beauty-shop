@@ -13,12 +13,12 @@
     >
         <picture class="bs-logo__pic">
             <source
-                :srcset="require('@/assets/img/logo.webp')"
+                :srcset="require('../assets/img/logo.webp')"
                 type="image/webp"
             />
 
             <img
-                :src="require('@/assets/img/logo.jpg')"
+                :src="require('../assets/img/logo.jpg')"
                 alt="Beauty shop's logo"
                 class="bs-logo__img"
             />
@@ -27,5 +27,5 @@
 </template>
 
 <style scoped lang="scss">
-    @import '@/components/styles/BeautyShopLogo/component.scss';
+    @import './styles/BeautyShopLogo/component.scss';
 </style>

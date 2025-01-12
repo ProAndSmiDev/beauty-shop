@@ -1,6 +1,6 @@
 <script lang="ts">
-    import { IServices } from '@/ts/interfaces/IServices';
     import { defineComponent, PropType, computed, ComputedRef } from 'vue';
+    import { IServices } from '../ts/interfaces/IServices';
 
     export default defineComponent({
         name: 'BeautyShopService',
@@ -30,12 +30,12 @@
     >
         <picture class="bs-service__pic">
             <source
-                :srcset="require(`@/assets/img/services/${serviceData.pic.name}.webp`)"
+                :srcset="require(`../assets/img/services/${serviceData.pic.name}.webp`)"
                 type="image/webp"
             />
 
             <img
-                :src="require(`@/assets/img/services/${serviceData.pic.name}.jpg`)"
+                :src="require(`../assets/img/services/${serviceData.pic.name}.jpg`)"
                 :alt="serviceData.pic.alt"
             />
         </picture>
@@ -64,5 +64,5 @@
 </template>
 
 <style scoped lang="scss">
-    @import '@/components/styles/BeautyShopService/component.scss';
+    @import './styles/BeautyShopService/component.scss';
 </style>

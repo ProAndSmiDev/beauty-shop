@@ -1,7 +1,7 @@
 <script lang="ts">
     import { defineComponent } from 'vue';
-    import { firstScreenPrice } from '@/ts/constants/firstScreenPrice';
-    import BeautyShopFirstScreen from '@/components/BeautyShopFirstScreen.vue';
+    import { firstScreenPrice } from '../ts/constants/firstScreenPrice';
+    import BeautyShopFirstScreen from '../components/BeautyShopFirstScreen.vue';
 
     export default defineComponent({
         name: 'BeautyShopPrice',
@@ -30,5 +30,5 @@
 </template>
 
 <style scoped lang="scss">
-    @import '@/styles/BeautyShopPrice/component.scss';
+    @import '../styles/BeautyShopPrice/component.scss';
 </style>
